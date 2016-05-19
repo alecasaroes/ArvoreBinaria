@@ -5,31 +5,35 @@
  */
 package arvorebinaria;
 
-import java.lang.reflect.Array;
 
 /**
  *
  * @author alexandre.gcazaroes1
  */
-public class ArvoreBinaria {
+public class CriarArvore {
     
     Node raiz;
     
-
-    public ArvoreBinaria () {
-    }
-    
-    public void criarArvore () {
-    }
     
     public void criarRaiz (int valor) {
+        if (raiz != null){
+            System.out.println("Raiz já criada");
+            return;
+        }
+        raiz = new Node (valor);
+        raiz.filhoDir = null;
+        raiz.filhoEsq = null;
     }
     
     public void inserirFilhoEsq (int valor) {
+        raiz.filhoEsq = new Node (valor);
         
+
     }
     
     public void inserirFilhoDir (int valor) {
-        
+        raiz.filhoDir = new Node (valor);
     }
+
+    
 }

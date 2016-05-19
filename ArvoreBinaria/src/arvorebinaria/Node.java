@@ -11,15 +11,19 @@ package arvorebinaria;
  */
 public class Node {
     
-    Object valor;
+    int valor;
     Node filhoEsq;
     Node filhoDir;
 
-    public Object getValor() {
+    public Node(int valor) {
+        this.valor = valor;
+    }
+
+    public int getValor() {
         return valor;
     }
 
-    public void setValor(Object valor) {
+    public void setValor(int valor) {
         this.valor = valor;
     }
 
@@ -38,6 +42,5 @@ public class Node {
     public void setFilhoDir(Node filhoDir) {
         this.filhoDir = filhoDir;
     }
-
-
+    
 }

@@ -17,13 +17,12 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
+        CriarArvore arvoreBinaria = new CriarArvore();
         
-        arvoreBinaria.criarArvore();
         arvoreBinaria.criarRaiz(10);
-        
-        
-        
+        arvoreBinaria.inserirFilhoEsq(20);
+        arvoreBinaria.inserirFilhoDir(30);
+        arvoreBinaria.inserirFilhoEsq(40);
     }
     
 }
