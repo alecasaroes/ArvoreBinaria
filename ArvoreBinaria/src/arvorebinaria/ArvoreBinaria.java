@@ -32,4 +32,15 @@ public class ArvoreBinaria {
         return no.filhoDireito;
     }
     
+    void exibePreOrdem (Node no) {
+        System.out.println (no.valor);
+        if (no.filhoEsquerdo != null) {
+            exibePreOrdem (no.filhoEsquerdo);
+        }
+        if (no.filhoDireito != null) {
+            exibePreOrdem (no.filhoDireito);
+        }
+    }
+
+    
 }

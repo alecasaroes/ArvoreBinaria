@@ -23,7 +23,13 @@ public class Main {
         Node x = arvoreBinaria.inserirEsquerda(raiz, 20);
         Node y = arvoreBinaria.inserirDireita(raiz, 40);
         Node z = arvoreBinaria.inserirEsquerda(x, 15);
+        Node a = arvoreBinaria.inserirDireita(y, 50);
+        Node b = arvoreBinaria.inserirDireita(a, 60);
+        Node c = arvoreBinaria.inserirEsquerda(z, 10);
+        Node d = arvoreBinaria.inserirEsquerda(b, 55);
+        Node e = arvoreBinaria.inserirDireita(c, 13);
         
+        arvoreBinaria.exibePreOrdem (raiz);
         
     }
     
