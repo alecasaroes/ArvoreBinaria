@@ -12,8 +12,8 @@ package arvorebinaria;
 public class Node {
     
     int valor;
-    Node filhoEsq;
-    Node filhoDir;
+    Node filhoEsquerdo;
+    Node filhoDireito;
 
     public Node(int valor) {
         this.valor = valor;
@@ -28,19 +28,19 @@ public class Node {
     }
 
     public Node getFilhoEsq() {
-        return filhoEsq;
+        return filhoEsquerdo;
     }
 
     public void setFilhoEsq(Node filhoEsq) {
-        this.filhoEsq = filhoEsq;
+        this.filhoEsquerdo = filhoEsq;
     }
 
     public Node getFilhoDir() {
-        return filhoDir;
+        return filhoDireito;
     }
 
     public void setFilhoDir(Node filhoDir) {
-        this.filhoDir = filhoDir;
+        this.filhoDireito = filhoDir;
     }
     
 }
