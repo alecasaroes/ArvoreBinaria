@@ -24,6 +24,7 @@ public class Main {
         Node y = arvoreBinaria.inserirDireita(raiz, 40);
         Node z = arvoreBinaria.inserirEsquerda(x, 15);
         
+        
     }
     
 }
